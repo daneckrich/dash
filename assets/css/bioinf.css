@@ -1,0 +1,276 @@
+#main_content { display:none; }
+
+body { background-color: transparent; }
+
+a {
+   outline: 0;
+}
+
+.navbar h1{ color: #e7e7e7; }
+
+.bottom5 { margin-bottom:5px; }
+
+/* css for jquery tabs - min style */	
+
+
+	
+	#tabs-min ul.nav-pills { 
+		background: transparent; 
+		border: none; 
+		border-bottom: 1px solid #c0c0c0; 
+		-moz-border-radius: 0px; 
+		-webkit-border-radius: 0px; 
+		border-radius: 0px; 
+		margin-bottom:.5em
+	} 
+	
+	#tabs-min li.active { 
+		padding-bottom:.9em;
+		background: transparent url(/assets/img/uiTabsArrow.png) no-repeat bottom center; 
+		border: none; 
+		margin-bottom:-1px;
+	} 
+	
+	#tabs-min li.active a { 
+		font-weight:bold;
+	}	
+	
+
+	.dt-nav, .stephelp {
+		cursor:pointer;
+	}
+
+	#ajax_loading {
+		display: none;
+		padding-left: 3em;
+		color: #CCCCCC;
+		font-weight: bold;
+	}
+	
+	#accordion a:hover { 
+		text-decoration:none; 		
+	}
+	
+	#accordion div.panel-heading:hover {
+		background-color:#eee;
+	}
+	
+	.table-striped > tbody > tr:nth-child(odd) {
+		background-color: #eee;
+	}
+	
+	table.display td { max-width: 400px; }
+	
+	table.rec_table  dt { font-weight:normal !important; }
+	table.rec_table dt:nth-child(n+1){ margin-top:1em; }
+	table.rec_table dd { margin-left: 1em; }
+	
+	table.rec_table td:first-child{
+		width:25%;	
+	}
+	
+	form .panel-heading { font-weight: bold; }
+	div.form-group label { font-weight: normal; }
+	
+	.form_section_help {
+		margin:5px 1em;
+		padding:1em;
+		border:1px solid #EFEFEF;
+		font-style:italic;				
+	}
+	
+	label.required:after {
+		content: " * required";
+		font-size:.8em;
+		color: red;
+		margin-left:5px;
+	}
+	
+	select.select_bars{
+		padding:0;
+	}
+	
+	select.select_bars option {
+		border-bottom: 1px solid #CCC;
+		padding:5px;
+	}
+	
+	.checkbox { margin-left: 1.2em; }
+	
+	.ms-select-all { white-space: nowrap; }
+	.ms-parent { min-width: 225px; }
+	
+	.rec_actions button { margin:0 1px 1px 0; }
+	
+	.dash-action-count {
+		position:absolute;
+		top: 0;
+		right: 0;
+		padding: 8px;
+	}
+
+/* DATATABLE ADJUSTMENTS FOR BETTER DISPLAY */
+	
+	table.dataTable thead > tr > th {
+	  padding-left: 8px;
+	  padding-right: 8px;
+	  white-space: nowrap;
+	}
+	
+	.datatable-scroll {
+		overflow-x: auto;
+		overflow-y: visible;
+	}
+	
+	
+table.dataTable thead .sorting_asc:after {
+    content: "";
+    float: right;
+    font-family: fontawesome;
+}
+
+table.dataTable thead .sorting_desc:after {
+    content: "";
+    float: right;
+    font-family: fontawesome;
+}
+
+table.dataTable thead .sorting:after {
+    content: "";
+    float: right;
+    font-family: fontawesome;
+    color: rgba(50,50,50,.5);
+}
+
+.footer {
+   
+    width: 100%;
+    height: 126px;
+    background: rgb(3,29,78) url("/assets/img/pedsnet_bg_tri.png") no-repeat right bottom;
+}
+
+.flot-pie-label {
+    font-size: 8pt;
+    text-align: center;
+    padding: 2px;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.primary { color: #337ab7; }
+
+path.dxfulldb { 
+	stroke: #004080;
+    stroke-width: 2;
+    fill: none;	
+}
+
+path.dx1 { 
+	stroke: #fccc0f;
+    stroke-width: 2;
+    fill: none;	
+}
+
+path.dx2 { 
+	stroke: #f44248;
+    stroke-width: 2;
+    fill: none;	
+}
+
+path.dx3 { 
+	stroke: #44ce52;
+    stroke-width: 2;
+    fill: none;	
+}
+
+path.dx4 { 
+	stroke: #1cbfb9;
+    stroke-width: 2;
+    fill: none;	
+}
+
+path.dx5 { 
+	stroke: #bf1cac;
+    stroke-width: 2;
+    fill: none;	
+}
+
+.dxfulldb { 
+	color: #004080;
+}
+
+.dx1 { 
+	color: #fccc0f;
+}
+
+.dx2 { 
+	color: #f44248;
+}
+
+.dx3 { 
+	color: #44ce52;
+}
+
+.dx4 { 
+	color: #1cbfb9;
+}
+
+.dx5 { 
+	color: #bf1cac;   
+}
+
+.km_summary{ 
+	border: 1px solid #CCCCCC;
+	margin:0px 0px 1em 3em;
+}
+
+.km_summary td{
+	border: 1px solid #CCCCCC;
+	padding:2px 5px;
+	text-align:right;
+	font-size:10px;
+	color:#333;
+}
+
+li.reg_li { padding-top: 20px; }
+
+.nav>li.reg_li>a:focus, .nav>li.reg_li>a:hover {
+    text-decoration: none;
+    background-color: transparent; 
+}
+
+#ok_header_dropdown {
+    left: -300px;
+}
+
+.panel-body-toggle { cursor:pointer; }
+
+ .fa-spin { -webkit-filter: blur(0); }
+ 
+ #selected-criteria label { margin-bottom: 0px; }
+ #selected-criteria p.help-block{ margin-top: 0px; margin-left:5px; font-size: .85em; }
+ 
+ table.simple-table td, th { 
+	border:1px solid #CCC;
+	padding:5px; 
+}
+
+
+#sel_concepts option {
+    border-bottom: 1px solid #CCC;
+    padding: 5px;
+}
+
+@media (min-width: 768px){
+	.sidebar {
+		 margin-top: 101px;
+	}
+	
+	#page-wrapper {
+		position: inherit;
+		margin: 0 0 0 5%;
+		padding: 0 30px;
+		border-left: 0px;
+	}
+}
+
