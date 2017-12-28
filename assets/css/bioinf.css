@@ -263,14 +263,21 @@ li.reg_li { padding-top: 20px; }
 
 @media (min-width: 768px){
 	.sidebar {
-		 margin-top: 101px;
+		 margin-top: 31px;
 	}
 	
-	#page-wrapper {
+	#page-wrapper .no-left-side{
 		position: inherit;
 		margin: 0 0 0 5%;
 		padding: 0 30px;
 		border-left: 0px;
 	}
+}
+
+.navbar-top-links li a { color:#e7e7e7; }
+
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: inherit; 
+	border-bottom:1px solid #eee;
 }
 

@@ -15,8 +15,6 @@ class getFile {
 	
 		if(isset($id) && is_numeric($id)){
 		
-			$dbc = new dbConnect($_SERVER['DVP_STAGE']);  	// from db.class.php
-			
 			$sql = sprintf("select 
 					rst_toolkit_file.file_id,
 					rst_toolkit_file.file_name,
@@ -24,8 +22,7 @@ class getFile {
 					rst_toolkit_file.file_tkn,
 					rst_toolkit_file.file_active
 					from rst_toolkit_file
-					where rst_toolkit_file.file_id=%d LIMIT 0,1",$id);
-					
+					where rst_toolkit_file.file_id=%d LIMIT 0,1",$id);					
 		
 			$result=runSQL($dbc,$sql);
 			
@@ -36,7 +33,6 @@ class getFile {
 			$this->active = $result['data'][0]['file_active'];
 			$this->ext = pathinfo($this->name, PATHINFO_EXTENSION);	
 			$this->getMime();
-			unset($dbc);
 			
 		}
 		else{

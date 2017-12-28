@@ -15,7 +15,11 @@ function getUrlParameter(sParam){
 		}
 	}
 	return false;
-}   
+}  
+
+String.prototype.stripSlashes = function(){
+    return this.replace(/\\(.)/mg, "$1");
+} 
 
  function validateEmail(email) {
  
