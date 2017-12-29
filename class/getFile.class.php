@@ -1,7 +1,5 @@
 <?php
 
-require_once 'ajax.inc.php';
-
 class getFile {
 
 	public $id;
@@ -22,8 +20,9 @@ class getFile {
 					rst_toolkit_file.file_tkn,
 					rst_toolkit_file.file_active
 					from rst_toolkit_file
-					where rst_toolkit_file.file_id=%d LIMIT 0,1",$id);					
+					where rst_toolkit_file.file_id=%d LIMIT 0,1",$id);				
 		
+			require_once 'ajax.inc.php';	
 			$result=runSQL($dbc,$sql);
 			
 			$this->id = $result['data'][0]['file_id'];

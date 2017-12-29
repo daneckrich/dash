@@ -132,5 +132,32 @@
 		return $arData;	
 	
 	}
+		
+	function runSTMT($dbc,$stmt){
+
+		$arData=array();
+		if(!$stmt->execute()) { 
+			$arData['success']=false;
+			$arData['error']=$stmt->errorInfo().' SQL: '.$stmt->debugDumpParams();
+			emailError($stmt->errorInfo().' SQL: '.$sql);  // emailError() function in func.inc.php file and sends email with info to bioinf			
+		}
+		else{
+			$arData['success']=true;
+			$arData['error']="none";	
+			$arData['rows']=$stmt->rowCount();
+			if($dbc->lastInsertId()){
+				$arData['rid'] = $dbc->lastInsertId();
+			}
+			else if($arData['rows'] > 0){
+				while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+					$arData['data'][]=$row;
+				}
+			}
+		}
+			
+		if(is_object($stmt)) $stmt = null;		
+		if(is_object($dbc)) $dbc = null;		
+		return $arData;
+	}	
 	
 ?>
