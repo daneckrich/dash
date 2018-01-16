@@ -266,15 +266,17 @@ li.reg_li { padding-top: 20px; }
 		 margin-top: 31px;
 	}
 	
-	#page-wrapper .no-left-side{
+	#page-wrapper.no-left-side{
 		position: inherit;
-		margin: 0 0 0 5%;
+		margin: 0 0 0 3%;
 		padding: 0 30px;
 		border-left: 0px;
 	}
 }
 
 .navbar-top-links li a { color:#e7e7e7; }
+
+ul.dropdown-menu li a { color: #333; }
 
 .nav>li>a:focus, .nav>li>a:hover {
     background-color: inherit; 

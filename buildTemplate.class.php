@@ -82,6 +82,10 @@ class buildTemplate{
 		$this->js[]="/assets/js/d3/d3-scale.min.js";
 	}
 	
+	public function addD3plus($v = "v20"){
+		$this->js[]="/assets/js/d3/d3plus.".$v.".full.min.js";
+	}
+
 	public function addTabs(){
 		$this->js[]="/assets/js/tabs.js";
 	}
